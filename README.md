@@ -21,11 +21,12 @@ for s in "static" "dynamic,1000" "guided"; do
   done
 done
 
-# 3. Struktur Berkas.
+P1-0penMP/
 ├── src/
-│   ├── matmul.c    # Kode sumber Perkalian Matriks
-│   └── prima.c     # Kode sumber Bilangan Prima dengan OpenMP
+│   ├── matmul.c                    # perkalian matriks (serial + paralel)
+│   ├── prima.c                     # hitung bilangan prima, reduction + schedule(runtime)
+│   └── prima_b4_tanpa_reduction.c  # percobaan tanpa reduction (pertanyaan analisis 4)
 ├── hasil/
-│   ├── matmul.txt  # Output mentah pengujian perkalian matriks
-│   └── prima.txt   # Output mentah pengujian scheduling prima
-└── README.md       # Dokumentasi petunjuk penggunaan
+│   ├── matmul.txt                  # data mentah perkalian matriks
+│   └── prima.txt                   # data mentah bilangan prima
+└── README.mdn
